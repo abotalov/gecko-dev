@@ -171,7 +171,7 @@ class HTMLElement(object):
 
     def value_of_css_property(self, property_name):
         '''
-        Gets the value of the specified CSS property name.
+        Gets the value of the specified CSS property name. Color values will be returned in rgba format.
 
         :param property_name: Property name to get the value of.
         '''

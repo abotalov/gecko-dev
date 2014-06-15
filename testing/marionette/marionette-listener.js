@@ -1477,7 +1477,7 @@ function getElementValueOfCssProperty(msg){
   let propertyName = msg.json.propertyName;
   try {
     let el = elementManager.getKnownElement(msg.json.id, curFrame);
-    sendResponse({value: curFrame.document.defaultView.getComputedStyle(el, null).getPropertyValue(propertyName)},
+    sendResponse({value: utils.getElementValueOfCssProperty(el, propertyName)},
                  command_id);
   }
   catch (e) {

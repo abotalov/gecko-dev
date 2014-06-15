@@ -27,3 +27,4 @@ Currently bundled atoms (please update as you add more):
 - isElementEnabled
 - isElementSelected
 - sendKeysToElement/type
+- getElementValueOfCssProperty
